@@ -200,3 +200,53 @@ section {
 .hidden {
   display: none;
 }
+
+@media screen and (max-width: 700px) {
+  body{
+    /* background-color: red; */
+  }
+  .header{
+    width: 80%;
+  }
+  main{
+    width: 80%;
+  }
+  section{
+    width: 80%;
+    height: 5em;
+  }
+  .flex div{
+    height: 4em;
+  }
+  .toggles-num {
+    width: 100%;
+  }
+  .toggles {
+    width: 40%;
+  }
+  .toggle-three {
+    margin-left: 80%;
+    width: 20%;
+    height: 15px;
+  }
+  .toggle-one {
+    /* margin-left: 90%; */
+    height: 15px;
+    width: 20%;
+  }
+  .toggle-two {
+    /* margin-left: 90%; */
+    width: 20%;
+    height: 15px;
+  }
+  .buttons{
+    height: 20px;
+  }
+  .del{
+    padding: 15px;
+    font-size: large;
+  }
+  h3 {
+    font-size: xx-large;
+  }
+}
