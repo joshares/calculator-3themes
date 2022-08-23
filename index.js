@@ -42,19 +42,22 @@ const numbers = [one, two, three, four, five, six, seven, eight, nine, zero, res
 
 // calculator function ////////
 
+
+
+
 numbers.map( function(x){
  x.addEventListener('click', function(e){
   e = screenInput.innerText.length
-  if (e > 5){
-    screenInput.innerText = screenInput.innerText.slice(0, 5)
-    
+  if (e > 13){
+    screenInput.innerText = screenInput.innerText.slice(0, 11)  
   }
-  // console.log(screenInput.innerText.length)
-    //  multiply.innerText.replace('x','*')
-     screenInput.innerText = (screenInput.innerText) + (x.innerText)
+  
+  
 
-     const f = typeof x.innerText
-  console.log(x.textContent, f)
+     screenInput.innerText = (screenInput.innerText + x.innerText).replace(',' , '')
+
+   
+  console.log(x.textContent, e)
  })
 })
 
@@ -63,10 +66,13 @@ reset.addEventListener('click', function() {
  
 })
 equal.addEventListener('click' ,function(e){
+   
     const h = eval(screenInput.innerText)
+    const j = h.toLocaleString('en-us')
+    const f = String(j)
+    console.log(h, j, f)
     
- 
- screenInput.innerText = h
+ screenInput.innerText = f.slice(0, 10)
 })
 multiply.addEventListener('click', function(e){
   e = multiply.innerText.replace('x','*')
@@ -75,7 +81,7 @@ multiply.addEventListener('click', function(e){
 del.addEventListener('click', function(e){
   e = screenInput.innerText.slice(0, -1)
   screenInput.innerText = e
-  console.log('MINUS 1', e)
+  // console.log('MINUS 1', e)
 })
 
 // add diffrent states of themes
