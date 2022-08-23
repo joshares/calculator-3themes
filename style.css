@@ -123,6 +123,8 @@ gap: 8px;
 h2 {
  text-align: center;
  font-size: larger;
+ margin: 0;
+ padding: 0;
  /* color: aqua; */
 }
 .del {
