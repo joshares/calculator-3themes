@@ -185,9 +185,7 @@ section {
  color: white;
 }
 .section {
- display: flex;
- justify-content: right;
- /* align-self: center; */
+ 
  margin-top: 20px;
  padding-right: 10px;
 }
@@ -195,6 +193,7 @@ section {
  font-size: xx-large;
  text-align: right;
  margin-top: 15px;
+ padding-top: 20px;
 }
 
 .hidden {
