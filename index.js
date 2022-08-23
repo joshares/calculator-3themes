@@ -54,7 +54,7 @@ numbers.map( function(x){
   
   
 
-     screenInput.innerText = (screenInput.innerText + x.innerText).replace(',' , '')
+     screenInput.innerText = (screenInput.innerText + x.innerText).replace(/,/g , '')
 
    
   console.log(x.textContent, e)
@@ -76,7 +76,7 @@ equal.addEventListener('click' ,function(e){
 })
 multiply.addEventListener('click', function(e){
   e = multiply.innerText.replace('x','*')
-   screenInput.innerText = (screenInput.innerText + e).replace(',' , '')
+   screenInput.innerText = (screenInput.innerText + e).replace(/,/g , '')
 })
 del.addEventListener('click', function(e){
   e = screenInput.innerText.slice(0, -1)
