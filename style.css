@@ -191,7 +191,10 @@ section {
  margin-top: 20px;
  padding-right: 10px;
 }
-.section h2 {
+.screen-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
  font-size: xx-large;
  text-align: right;
  margin-top: 15px;
