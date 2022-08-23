@@ -47,17 +47,13 @@ const numbers = [one, two, three, four, five, six, seven, eight, nine, zero, res
 
 numbers.map( function(x){
  x.addEventListener('click', function(e){
-  e = screenInput.innerText.length
-  if (e > 13){
-    screenInput.innerText = screenInput.innerText.slice(0, 11)  
-  }
-  
-  
-
-     screenInput.innerText = (screenInput.innerText + x.innerText).replace(/,/g , '')
-
-   
-  console.log(x.textContent, e)
+   e = screenInput.innerText.length
+  if (e > 11){
+    
+    screenInput.innerText = screenInput.innerText + ''
+ }else {
+    screenInput.innerText = (screenInput.innerText + x.innerText).replace(/,/g , '')
+ }
  })
 })
 
