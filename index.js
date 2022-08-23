@@ -76,7 +76,7 @@ equal.addEventListener('click' ,function(e){
 })
 multiply.addEventListener('click', function(e){
   e = multiply.innerText.replace('x','*')
-   screenInput.innerText += e
+   screenInput.innerText = (screenInput.innerText + e).replace(',' , '')
 })
 del.addEventListener('click', function(e){
   e = screenInput.innerText.slice(0, -1)
