@@ -16,13 +16,13 @@ h3 {
 }
 header p {
  color: white;
- 
 }
 .header {
  display: flex;
  justify-content: space-between;
  width: 40%;
  margin: 0 auto;
+ padding-bottom: 20px;
 }
 .toggles {
  display: flex;
@@ -121,10 +121,12 @@ gap: 8px;
 }
 
 h2 {
+  width: 100%;
  text-align: center;
  font-size: larger;
- margin: 0;
- padding: 0;
+ margin: 0 ;
+ padding: 20px;
+ /* padding-top: 20%; */
  /* color: aqua; */
 }
 .del {
@@ -183,20 +185,24 @@ section {
  width: 40%;
  height: 4em;
  margin: 0 auto;
+ padding-right: 10px;
  background-color: hsl(224, 36%, 15%);
+  /* border: 1px solid red; */
  color: white;
 }
-.section {
- 
+/* .section {
+ border: 1px solid red; 
  margin-top: 20px;
- padding-right: 10px;
-}
+} */
 .screen-inputs {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: right; */
+  /* display: inline-block; */
+  /* margin-left: 78%; */
  font-size: xx-large;
  text-align: right;
+ /* margin-top: 15px; */
  padding-top: 20px;
 }
 
